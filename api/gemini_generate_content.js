@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   }
   try {
     const { query } = req.body;
-    const geminiApiKey = process.env.GOOGLE_API_KEY;
+    const geminiApiKey = process.env.GEMINI_API_KEY;
     const ai = new GoogleGenAI({
         apiKey: geminiApiKey
     });
